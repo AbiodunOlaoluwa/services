@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Missed enquiry checks for letting agents</title>
+<meta name="description" content="Find the portal enquiries that never reached your CRM, and answer the ones that arrive when the office is closed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body data-ink="lettings">
+<a class="skip" href="#main">Skip to the content</a>
+<div class="sheet">
+  <header class="topline">
+    <a href="../">Olaoluwa Abiodun &middot; software engineer, Lagos</a>
+    <a href="mailto:mate.olaoluwa@gmail.com">mate.olaoluwa@gmail.com</a>
+  </header>
+  <main id="main">
+    <div class="masthead"><dl class="meta"><dt>For</dt><dd>Independent letting and estate agents</dd><dt>From</dt><dd>Olaoluwa Abiodun, software engineer, Lagos</dd><dt>Start</dt><dd><strong>A free one-page plan</strong>, then a free two-week check</dd></dl><h1>Find the portal enquiries that never reached your CRM.</h1><p class="deck">I build small systems for letting agents that check the enquiries from Rightmove, Zoopla, OnTheMarket and your website against your CRM, flag the ones that went missing, and send a first reply when the office is closed.</p></div>
+    <div class="body"><div class="prose">
+<section class="clause"><h2>Where enquiries go missing</h2>
+<ul class="lede-list">
+<li>A portal changes the layout of its emails, and the parser that feeds your CRM stops recognising them. The emails keep arriving, nothing lands in the CRM, and nobody notices until a landlord asks why their flat has had no interest.</li>
+<li>A forwarding rule breaks. Nothing errors; the portal simply goes quiet.</li>
+<li>An applicant enquires at 8pm on a Friday. By Monday morning they've booked a viewing with the agent who replied first.</li>
+</ul></section>
+
+<section class="clause"><h2>What I build</h2>
+<div class="item"><h3>The watchdog</h3>
+<p>Every few minutes (how often depends on what your CRM allows) it looks up each new enquiry in your CRM. Anything still missing after a set time, 15 minutes in the demo, becomes an alert with the original email attached, and a portal that goes quiet for much longer than usual is flagged too. This is what an alert looks like, on sample data:</p>
+<figure class="exhibit" aria-label="Example alert, sample data">
+<div class="label"><b>Missing from the CRM</b><span>Sample data &middot; <span class="t">Tue 13:05</span></span></div>
+<p>3 Zoopla enquiries in a row haven't reached your CRM. Every Zoopla enquiry since <span class="t">12:40</span> is missing, while the other portals are fine. The emails are still arriving, so the parser has most likely stopped recognising them.</p>
+</figure>
+<p>Each week you get one line per portal: enquiries received, and how many reached the CRM. It can't see enquiries that never reached your inbox at all, such as a phone call nobody logged.</p>
+<a class="demo" href="https://abiodunolaoluwa.github.io/enquiry-watchdog/">Try the watchdog on sample data</a></div>
+
+<div class="item"><h3>The out-of-hours first reply</h3>
+<p>When the office is closed, the applicant gets a reply within minutes asking the questions you choose, for example move-in date, budget, pets and when they could view. Every draft is checked on the server against your rules before it goes out, such as never confirming a viewing, a price or availability, never discussing deposits, and passing complaints and landlord messages straight to a person. If a draft breaks a rule, it gets one rewrite; if that fails too, nothing is sent and the enquiry goes to your team with a note.</p>
+<a class="demo" href="https://reply-desk-8rzb.onrender.com">See the reply demo</a></div>
+</section>
+
+<section class="clause"><h2>How we'd start</h2>
+<ol class="schedule">
+<li><div><h3>Tell me your setup <span class="cost">Free</span></h3><p>Reply with the portals you list on and the CRM you use, and I'll send a one-page plan for your agency: what I'd check, what I'd need, and what it would cost. No access needed for this.</p></div></li>
+<li><div><h3>A two-week check, if the plan makes sense <span class="cost">Free</span></h3><p>Read-only access to the inbox your portal emails land in, plus a CRM export for the same fortnight, under a short data agreement. You get back how many enquiries each portal sent, how many reached the CRM, how long the first reply took, and anything that went missing.</p></div></li>
+<li><div><h3>A fixed-price build <span class="cost">&pound;1,500 to &pound;3,500</span></h3><p>Usually two to three weeks, on the accounts and CRM you already use.</p></div></li>
+<li><div><h3>A monthly care plan <span class="cost">&pound;250 to &pound;500 a month</span></h3><p>I keep an eye on it, fix it when a portal changes its emails, make small changes, and send a one-page report each month. Cancel with a month's notice.</p></div></li>
+</ol></section>
+
+<section class="clause"><h2>Your data</h2>
+<p>Where possible the software runs in your own accounts, and where it can't, on a small server set up in your agency's name that you can switch off. I work with the least access the job needs, you can revoke it at any time, and when the free check ends I remove my access, delete anything I exported, and confirm it in writing. I sign a data processing agreement before I touch anything.</p>
+<p>Nothing replies on your behalf until you've approved how it speaks, and it can run in draft-only mode for as long as you like.</p></section>
+
+<section class="clause"><h2>Who you'd be working with</h2>
+<p>I'm Olaoluwa Abiodun, an engineer based in Lagos, Nigeria, working UK hours (Lagos is an hour ahead of London in winter and level with it in summer). I built Rentyx, a property-management platform, end to end, including an assistant that answered tenants' and landlords' WhatsApp messages under rules the server checked before anything went out, handing anything unclear to me.</p>
+<p>You'd be one of my first agency clients, which is why the check is free and the build price is fixed.</p></section>
+
+<section class="clause"><h2>Questions</h2>
+<dl class="faq">
+<dt>Which CRMs does it work with?</dt><dd>I haven't worked with every lettings CRM, so I check what yours allows (an API, an email-in address or exports) before I quote.</dd>
+<dt>What if a reply goes wrong?</dt><dd>It only sends replies that pass your rules, and anything they don't cover goes to a person. You can start in draft-only mode, where your team approves every reply.</dd>
+<dt>Why are you in Lagos?</dt><dd>That's where I live. The work is all online, and my day overlaps yours.</dd>
+</dl></section>
+
+<div class="close"><p>Email me with your agency's name, the portals you list on and the CRM you use. I'll send the one-page plan within two working days.</p>
+<a class="button" href="mailto:mate.olaoluwa@gmail.com?subject=One-page%20plan%20for%20our%20agency">Email Olaoluwa</a></div>
+</div><aside class="glance" aria-label="At a glance"><h2>At a glance</h2><dl><dt>For</dt><dd>Independent letting and estate agents</dd><dt>First step</dt><dd>A one-page plan for your agency within two working days. Free, no access needed.</dd><dt>Then</dt><dd>A free two-week check, then a fixed-price build of two to three weeks</dd><dt>Price</dt><dd>Build &pound;1,500 to &pound;3,500<br>Care plan &pound;250 to &pound;500 a month</dd><dt>Hours</dt><dd>UK working hours, from Lagos</dd></dl><a class="button" href="mailto:mate.olaoluwa@gmail.com?subject=One-page%20plan%20for%20our%20agency">Ask for the one-page plan</a><p class="small">Tell me the portals you list on and the CRM you use.</p></aside></div>
+  </main>
+  <footer class="foot">
+    <span>Olaoluwa Abiodun, sole trader, Lagos, Nigeria &middot; <a href="mailto:mate.olaoluwa@gmail.com">mate.olaoluwa@gmail.com</a></span>
+    <span><a href="../privacy/">Privacy notice</a> &middot; No cookies or tracking on these pages</span>
+  </footer>
+</div>
+</body>
+</html>
