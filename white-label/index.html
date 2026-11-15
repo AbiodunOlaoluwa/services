@@ -5,64 +5,57 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>White-label build help for automation agencies</title>
 <meta name="description" content="The code-heavy part of a client build, done under your name: custom steps, awkward APIs, scrapers and LLM steps with checks.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-ink="white-label">
-<a class="skip" href="#main">Skip to the content</a>
-<div class="sheet">
-  <header class="topline">
-    <a href="../">Olaoluwa Abiodun &middot; software engineer, Lagos</a>
-    <a href="mailto:mate.olaoluwa@gmail.com">mate.olaoluwa@gmail.com</a>
-  </header>
-  <main id="main">
-    <div class="masthead"><dl class="meta"><dt>For</dt><dd>Automation and CRM agencies</dd><dt>From</dt><dd>Olaoluwa Abiodun, software engineer, Lagos</dd><dt>Start</dt><dd><strong>A free scope and fixed quote</strong> within two working days</dd></dl><h1>The code-heavy part of a client build, done under your name.</h1><p class="deck">Your team keeps the workflow in n8n or Make. When a step needs real code, like a custom node, an awkward API, a scraper or an LLM step that needs rules around it, I write that piece, document it, and hand it back under your brand.</p></div>
-    <div class="body"><div class="prose">
-<section class="clause"><h2>The kind of thing I pick up</h2>
-<ul class="lede-list">
+<body>
+<div class="page">
+<header class="site">
+  <a href="../">Olaoluwa Abiodun</a>
+  <a href="mailto:mate.olaoluwa@gmail.com">mate.olaoluwa@gmail.com</a>
+</header>
+<main>
+<h1>The code-heavy part of a client build, done under your name</h1>
+<p class="intro">Your team keeps the workflow in n8n or Make. When a step needs real code, like a custom node, an awkward API, a scraper or an LLM step that needs rules around it, I write that piece, document it, and hand it back under your brand.</p>
+
+<h2>The kind of thing I pick up</h2>
+<ul>
 <li>A client's API that rate-limits, paginates oddly and fails at 2am, so the flow needs retries, logging and a way to replay what failed.</li>
 <li>A scraper with checks that tell you when the source site has changed, instead of quietly returning nothing.</li>
 <li>An LLM step whose drafts have to pass fixed checks before anything is sent.</li>
-</ul></section>
+</ul>
 
-<section class="clause"><h2>Two things I've built that look like agency work</h2>
-<div class="item"><h3>Lead Engine</h3>
-<p>Pulls firms from directories with different page layouts, keeps a field only when it can quote it from the page, merges the same firm found in two places, and picks up where it stopped after a failure.</p>
-<a class="demo" href="https://lead-engine-yqxv.onrender.com">Lead Engine demo</a></div>
-<div class="item"><h3>Reply Desk</h3>
-<p>Answers inbound messages with a model, but every draft has to pass checks on the server. A draft that fails gets one rewrite and is then held for a person, and there's a kill switch and a daily cap.</p>
-<a class="demo" href="https://reply-desk-8rzb.onrender.com">Reply Desk demo</a></div>
+<h2>Two things I've built that look like agency work</h2>
+<p><strong>Lead Engine</strong> pulls firms from directories with different page layouts, keeps a field only when it can quote it from the page, merges the same firm found in two places, and picks up where it stopped after a failure. <a href="https://lead-engine-yqxv.onrender.com">Demo</a>.</p>
+<p><strong>Reply Desk</strong> answers inbound messages with a model, but every draft has to pass checks on the server. A draft that fails gets one rewrite and is then held for a person, and there's a kill switch and a daily cap. <a href="https://reply-desk-8rzb.onrender.com">Demo</a>.</p>
 <p>I also built search over legal texts that quotes the paragraph it relied on, or refuses: <a href="https://cite-desk.onrender.com">Cite Desk</a>.</p>
-</section>
 
-<section class="clause"><h2>How we'd work</h2>
-<ol class="schedule">
-<li><div><h3>Send me five lines, or a redacted workflow export <span class="cost">Free</span></h3><p>No client data needed. Within two working days you get a scope, the approach I'd take, and a fixed quote.</p></div></li>
-<li><div><h3>One fixed piece first <span class="cost">Fixed quote</span></h3><p>Typically a single code step, integration or small service, delivered in under a week with a README and tests, so you can judge the work without committing to more.</p></div></li>
-<li><div><h3>Your conventions</h3><p>My code sits where your team can see it: a code node inside the workflow, or a small service in your account that the workflow calls. Your repo, naming and documentation, with handover notes your team can maintain, and I fix bugs in my code free for 30 days after handover.</p></div></li>
-<li><div><h3>Then per project, or a monthly block of hours</h3><p>Whichever suits your pipeline.</p></div></li>
-</ol></section>
+<h2>How we'd work</h2>
+<ol>
+<li><strong>Send me five lines describing the piece, or a redacted export of the workflow.</strong> No client data needed. Within two working days you get a free scope, the approach I'd take, and a fixed quote.</li>
+<li><strong>One fixed piece first,</strong> typically a single code step, integration or small service, delivered in under a week with a README and tests, so you can judge the work without committing to more.</li>
+<li><strong>Your conventions.</strong> My code sits where your team can see it: a code node inside the workflow, or a small service in your account that the workflow calls. I follow your repo, naming and documentation, write handover notes your team can maintain, and fix bugs in my code free for 30 days after handover.</li>
+<li><strong>Then per project, or a monthly block of hours,</strong> whichever suits your pipeline.</li>
+</ol>
 
-<section class="clause"><h2>Who you'd be working with</h2>
-<p>I'm Olaoluwa Abiodun, an engineer based in Lagos, Nigeria, on UK and European hours. I'm code-first (TypeScript, Python, PostgreSQL) and built Rentyx, a property-management platform, end to end. I work inside n8n and Make when the job needs it, and your team stays the experts on those tools. My code is on <a href="https://github.com/AbiodunOlaoluwa">GitHub</a>.</p></section>
+<h2>Who you'd be working with</h2>
+<div class="me"><img src="../assets/olaoluwa.jpg" alt="Olaoluwa Abiodun" width="112" height="112">
+<p>I'm Olaoluwa Abiodun, an engineer based in Lagos, Nigeria, on UK and European hours. I'm code-first (TypeScript, Python, PostgreSQL) and built Rentyx, a property-management platform, end to end. I work inside n8n and Make when the job needs it, and your team stays the experts on those tools. My code is on <a href="https://github.com/AbiodunOlaoluwa">GitHub</a>.</p>
+</div>
 
-<section class="clause"><h2>Questions</h2>
-<dl class="faq">
-<dt>Will you contact our client?</dt><dd>Only if you ask me to.</dd>
-<dt>Who owns the code?</dt><dd>You or your client, on payment.</dd>
-<dt>What about NDAs and client data?</dt><dd>I'll sign your NDA and a sub-processor agreement, and I don't need client data to quote.</dd>
-</dl></section>
+<h2>Questions</h2>
+<h3>Will you contact our client?</h3>
+<p>Only if you ask me to.</p>
+<h3>Who owns the code?</h3>
+<p>You or your client, on payment.</p>
+<h3>What about NDAs and client data?</h3>
+<p>I'll sign your NDA and a sub-processor agreement, and I don't need client data to quote.</p>
 
-<div class="close"><p>Email me the piece your team would rather not build. I'll reply within two working days with a free scope and a fixed quote.</p>
-<a class="button" href="mailto:mate.olaoluwa@gmail.com?subject=Scope%20and%20quote%20request">Email Olaoluwa</a></div>
-</div><aside class="glance" aria-label="At a glance"><h2>At a glance</h2><dl><dt>For</dt><dd>Automation and CRM agencies</dd><dt>First step</dt><dd>A free scope and fixed quote within two working days. No client data needed.</dd><dt>Then</dt><dd>One fixed piece, usually under a week, with a README and tests</dd><dt>After</dt><dd>Per project, or a monthly block of hours</dd><dt>Hours</dt><dd>UK and European hours, from Lagos</dd></dl><a class="button" href="mailto:mate.olaoluwa@gmail.com?subject=Scope%20and%20quote%20request">Ask for a scope and quote</a><p class="small">Five lines on the piece you need is enough.</p></aside></div>
-  </main>
-  <footer class="foot">
-    <span>Olaoluwa Abiodun, sole trader, Lagos, Nigeria &middot; <a href="mailto:mate.olaoluwa@gmail.com">mate.olaoluwa@gmail.com</a></span>
-    <span><a href="../privacy/">Privacy notice</a> &middot; No cookies or tracking on these pages</span>
-  </footer>
+<p class="signoff">If there's a piece your team would rather not build, email me at <a href="mailto:mate.olaoluwa@gmail.com">mate.olaoluwa@gmail.com</a> and I'll reply within two working days with a free scope and a fixed quote.</p>
+<p>Olaoluwa</p>
+</main>
+<footer class="site">
+  <a href="../privacy/">Privacy notice</a>. These pages don't use cookies or tracking.
+</footer>
 </div>
 </body>
 </html>

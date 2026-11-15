@@ -4,7 +4,7 @@ Title: Privacy notice
 Updated: 15 November 2026
 
 ## Who I am
-I'm Olaoluwa Abiodun, a software engineer working as a sole trader from Lagos, Nigeria. I decide how the personal details described here are used, which makes me the controller under UK and EU data protection law (UK GDPR and EU GDPR), and Nigeria's Data Protection Act 2023 also applies to me. You can reach me about anything on this page at mate.olaoluwa@gmail.com.
+I'm Olaoluwa Abiodun, a software engineer working for myself from Lagos, Nigeria. I decide how the personal details described here are used, which makes me the controller under UK and EU data protection law (UK GDPR and EU GDPR), and Nigeria's Data Protection Act 2023 also applies to me. You can reach me about anything on this page at mate.olaoluwa@gmail.com.
 
 ## Whose details this covers
 - People I email about my services: usually owners, directors and managers at letting agencies, recruitment agencies, and automation or software agencies.

@@ -4,7 +4,7 @@ Offer pages and privacy notice for Olaoluwa Abiodun's services, built as plain s
 
 - `lettings/`, `recruitment/`, `white-label/`: one page per offer
 - `privacy/`: privacy notice for people he contacts about his work
-- `copy-*.md`: the source copy; `build.py` turns it into the pages (`python3 build.py`)
+- `build.py` holds the page copy and writes the pages (`python3 build.py`); `copy-privacy.md` is the privacy notice text
 - `assets/site.css`: shared styles (light and dark)
 
 No JavaScript, cookies or analytics.
